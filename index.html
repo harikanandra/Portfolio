@@ -7,105 +7,129 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Light background color */
-            color: #333; /* Dark text color for contrast */
+            background-color: #f9f9f9;
+            color: #333;
         }
         header {
-            background-color: #4a90e2; /* Soft blue header */
-            color: #fff; /* White text */
-            padding: 2rem 0;
+            background: linear-gradient(135deg, #4a90e2, #0070c9);
+            color: #fff;
+            padding: 2rem 1rem;
             text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
         }
         nav {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            background-color: #333; /* Dark nav bar */
-            padding: 10px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
         }
         nav a {
-            color: #fff; /* White links */
+            color: #0070c9;
             text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
+            font-weight: 500;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #4a90e2; /* Change to soft blue on hover */
+            color: #004080;
         }
         .container {
-            padding: 20px;
+            padding: 2rem 1rem;
             max-width: 1200px;
             margin: 0 auto;
         }
         .hero {
-            background-color: #f4f4f4; /* Light background for hero section */
-            padding: 50px 0;
+            background: #e6f7ff;
+            padding: 3rem 1rem;
             text-align: center;
+            border-radius: 10px;
         }
         .hero img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better effect */
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
         }
         .section {
-            margin-top: 40px;
-            padding: 20px;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: #fff;
             border-radius: 10px;
-            background-color: #fff; /* White background for sections */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .section h2 {
-            color: #4a90e2; /* Soft blue headings */
-            border-bottom: 2px solid #4a90e2; /* Underline for headings */
-            padding-bottom: 10px;
+            font-size: 1.8rem;
+            color: #0070c9;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #0070c9;
+            padding-bottom: 0.5rem;
         }
         .skills ul, .experience ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
             display: flex;
             flex-wrap: wrap;
+            gap: 1rem;
         }
         .skills li, .experience li {
-            background-color: #e6f7ff; /* Light blue for skill items */
-            margin: 5px;
-            padding: 10px;
+            background: #e6f7ff;
+            padding: 0.5rem 1rem;
             border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
         }
         .projects .project {
-            background-color: #f9f9f9; /* Light gray for projects */
-            padding: 15px;
+            background: #f4f4f4;
+            padding: 1rem;
             border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         footer {
-            background-color: #333; /* Dark footer */
-            color: #fff; /* White footer text */
+            background: #333;
+            color: #fff;
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
+            padding: 1rem;
+            margin-top: 2rem;
         }
         .contact {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 2rem;
         }
         .contact a {
-            margin: 0 10px;
-            font-size: 24px;
-            color: #4a90e2; /* Soft blue for contact icons */
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            color: #0070c9;
             transition: color 0.3s;
         }
         .contact a:hover {
-            color: #333; /* Change to dark on hover */
+            color: #004080;
         }
         @media (max-width: 768px) {
-            .hero h1 {
+            header h1 {
                 font-size: 2rem;
+            }
+            nav {
+                flex-wrap: wrap;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
             }
             .hero p {
                 font-size: 1rem;
@@ -129,14 +153,14 @@
 
     <div class="container">
         <section class="hero">
-            <img src="C:\Users\MSII\OneDrive - Aditya Educational Institutions\Desktop\mani_docs\resize_DeviManikanta_pic_clg (1).jpg" alt="Profile Picture">
+            <img src="profile-picture.jpg" alt="Profile Picture">
             <h1>Hello, I'm Harika Nandra</h1>
             <p>Aspiring Software Developer</p>
         </section>
 
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>Hello! I'm Harika Nandra, an aspiring software developer with a passion for building AI-based solutions. I enjoy working on challenging projects and learning new technologies.</p>
+            <p>Hello! I'm Harika Nandra, an aspiring software developer with a passion for building innovative solutions. I enjoy working on challenging projects and learning new technologies.</p>
         </section>
 
         <section id="skills" class="skills section">
@@ -146,15 +170,9 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
-                <li>Machine Learning</li>
-                <li>AI Development</li>
-                <li>R Programming Language</li>
                 <li>Cloud Computing</li>
                 <li>Amazon Web Services (AWS)</li>
-                <li>Generative AI</li>
-                <li>Natural Language Processing (NLP)</li>
                 <li>SQL</li>
-                <li>Data Visualization</li>
             </ul>
         </section>
 
@@ -196,4 +214,3 @@
     </footer>
 </body>
 </html>
-
